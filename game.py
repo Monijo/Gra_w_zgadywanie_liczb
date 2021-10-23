@@ -1,6 +1,9 @@
 from random import randint
 
 def game_of_guessing_numbers():
+    '''Get number from user.
+    Compare with drawn number.
+    '''
     drawn_number = randint(1,100)
     guessing_number = 0
     while not(drawn_number == guessing_number):
@@ -12,8 +15,8 @@ def game_of_guessing_numbers():
                 print("To big!")
         except ValueError:
             print("It's not a number!")
-    return print("You win!")
+    print("You win!")
 
 
-
-game_of_guessing_numbers()
+if __name__ =="__main__":
+    game_of_guessing_numbers()
