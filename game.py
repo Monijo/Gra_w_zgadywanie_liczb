@@ -6,6 +6,10 @@ def game_of_guessing_numbers():
     while not(drawn_number == guessing_number):
         try:
             guessing_number = int(input("Guess the number: "))
+            if guessing_number < drawn_number:
+                print("To small!")
+            elif guessing_number > drawn_number:
+                print("To big!")
         except ValueError:
             print("It's not a number!")
 
