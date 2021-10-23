@@ -12,6 +12,7 @@ def game_of_guessing_numbers():
                 print("To big!")
         except ValueError:
             print("It's not a number!")
+    return print("You win!")
 
 
 
